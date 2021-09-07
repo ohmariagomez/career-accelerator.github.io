@@ -1,1 +1,1 @@
-# careeraccelerator.github.io
+# career-accelerator.github.io
