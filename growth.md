@@ -13,7 +13,7 @@ github:
 
 <body>
 <div id="container">
-        <div id="start" class="btn">Start Goals Quiz!</div>
+        <div id="start">Start Goals Quiz!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="choices">
