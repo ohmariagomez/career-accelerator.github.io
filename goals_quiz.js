@@ -189,3 +189,11 @@ function scoreRender(){
     
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
+function restartQuiz() {
+    start.style.display = "block";
+    scoreBlock.style.display = "none";
+    scoreMessage.style.display = "none";
+    quizAgain.style.display = "none";
+    score = 0;
+    questionIndex = 0;
+}
