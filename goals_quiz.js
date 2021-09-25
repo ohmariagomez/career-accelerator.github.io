@@ -135,7 +135,6 @@ function renderCounter(){
             renderQuestion();
         }else{
             // end the quiz and show the score
-            clearInterval(TIMER);
             scoreRender();
         }
     }
@@ -160,19 +159,18 @@ function checkAnswer(answer){
         renderQuestion();
     }else{
         // end the quiz and show the score
-        clearInterval(TIMER);
         scoreRender();
     }
 }
 
 // answer is correct
 function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+    document.getElementById(runningQuestion).style.backgroundColor = "green";
 }
 
 // answer is Wrong
 function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+    document.getElementById(runningQuestion).style.backgroundColor = "red";
 }
 
 // score render
@@ -191,6 +189,7 @@ function scoreRender(){
     
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
+
 function restartQuiz() {
     start.style.display = "block";
     scoreBlock.style.display = "none";
