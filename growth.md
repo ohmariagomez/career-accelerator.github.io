@@ -11,17 +11,35 @@ github:
 --- 
 ### Helloo
 
+
+{::nomarkdown}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="goals_quiz_style.css">
+</head>
 <body>
-<div id="container">
-        <div id="start">Start Goals Quiz!</div>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
+            <div id="qImg"></div>
             <div id="choices">
                 <div class="choice" id="A" onclick="checkAnswer('A')"></div>
                 <div class="choice" id="B" onclick="checkAnswer('B')"></div>
             </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
         </div>
         <div id="scoreContainer" style="display: none"></div>
     </div>
     <script src="goals_quiz.js"></script>
 </body>
+</html>
+{:/}
