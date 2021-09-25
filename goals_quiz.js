@@ -16,6 +16,66 @@ let questions = [
         choiceA : "Growth",
         choiceB : "Checklist",
         correct : "A"
+    },
+    {
+        question : "Get promoted to senior technical analyst",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "B"
+    },
+    {
+        question : "Get an A on my class",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "B"
+    },
+    {
+        question : "Enhance my coding skills in SQL and learning Python",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "A"
+    },
+    {
+        question : "Be more proactive in accepting new responsibilities",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "A"
+    },
+    {
+        question : "Have more self-discipline on my homework",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "A"
+    },
+    {
+        question : "Launch my own fashion startup",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "B"
+    },
+    {
+        question : "Have a healthier lifestyle",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "A"
+    },
+    {
+        question : "Learn how to do user discovery",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "A"
+    },
+    {
+        question : "Lose 5 pounds",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "B"
+    },
+    {
+        question : "Manage a team",
+        choiceA : "Growth",
+        choiceB : "Checklist",
+        correct : "B"
     }
 ];
 
@@ -79,7 +139,7 @@ function renderCounter(){
     }
 }
 
-// checkAnwer
+// checkAnswer
 
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
@@ -127,6 +187,5 @@ function scoreRender(){
               (scorePerCent >= 20) ? "img/2.png" :
               "img/1.png";
     
-    scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
