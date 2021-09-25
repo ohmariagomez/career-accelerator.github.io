@@ -15,7 +15,7 @@ github:
 
 <body>
 <div id="container">
-        <div id="start">Start Goals Quiz!</div>
+        <div id="start" class="btn">Start Goals Quiz!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="choices">
@@ -26,7 +26,7 @@ github:
         </div>
         <div id="scoreContainer" style="display: none"></div>
     </div>
-    <script src="quiz.js"></script>
+    <script src="goals_quiz.js"></script>
 </body>
 
 <svg xmlns="http://www.w3.org/2000/svg"
