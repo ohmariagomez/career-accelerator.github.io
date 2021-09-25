@@ -1,6 +1,6 @@
 ---
-title: Growth Mindset
-layout: template
+title: growth-mindset
+layout: default
 filename: growth
 --- 
 ### Hello
