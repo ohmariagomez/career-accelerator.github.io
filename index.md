@@ -1,5 +1,6 @@
 ---
-title: Home
+title: Hi GHC, welcome to our interactive site!
+button-title: Home
 layout: default
 filename: index
 order: 1
