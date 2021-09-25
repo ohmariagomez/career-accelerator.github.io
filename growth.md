@@ -1,5 +1,5 @@
 ---
-title: growth-mindset
+title: Growth Mindset
 layout: default
 filename: growth
 --- 
