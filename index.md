@@ -1,5 +1,5 @@
 ---
-title: main-page
+title: Home
 layout: default
 filename: index
 ---
