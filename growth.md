@@ -38,6 +38,7 @@ github:
             <div id="choiceResponse" style="display: none"></div>
         </div>
         <div id="scoreContainer" style="display: none"></div>
+        <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
     </div>
     <script src="goals_quiz.js"></script>
 </body>
