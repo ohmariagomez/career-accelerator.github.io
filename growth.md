@@ -11,8 +11,6 @@ github:
 --- 
 ### Can you classify which goals are **growth mindset** vs. **checklist** oriented?
 
-<div id="start"><button class="start-btn" onClick= "beginQuiz()">Begin the Quiz!</button>
-
 {::nomarkdown}
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +21,7 @@ github:
 </head>
 <body>
     <div id="container">
-        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Start Goals Quiz!</button></div>
+        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Start Goals Quiz!!</button></div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="qImg"></div>
