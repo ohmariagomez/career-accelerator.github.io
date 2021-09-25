@@ -29,11 +29,6 @@ github:
                 <button class="choice" id="A" onclick="checkAnswer('A')"></button>
                 <button class="choice" id="B" onclick="checkAnswer('B')"></button>
             </div>
-            <div id="timer">
-                <div id="counter"></div>
-                <div id="btimeGauge"></div>
-                <div id="timeGauge"></div>
-            </div>
             <div id="progress"></div>
             <div id="choiceResponse" style="display: none"></div>
         </div>
