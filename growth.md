@@ -12,13 +12,17 @@ github:
 ### Helloo
 
 {::nomarkdown}
-<svg width="300" height=300>
+
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 30 20"
+onload="makeDraggable(evt)">
+  <rect x="0" y="0" width="30" height="20" fill="#fafafa"/>
+  <rect x="4" y="5" width="8" height="10" fill="#007bff"/>
+  <rect x="18" y="5" width="8" height="10"   fill="#888"/>
+  <svg width="300" height=300>
     <circle cx="150" cy="100" r="50" fill="linen"/>.draggable {
   cursor: move;
 }
-  xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 30 20"
-     onload="makeDraggable(evt)"
   
   function makeDraggable(evt) {
   var svg = evt.target;
@@ -48,7 +52,5 @@ github:
                           }
   }
  
-  
-  
 </svg>
 {:/}
