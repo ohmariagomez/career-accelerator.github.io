@@ -12,7 +12,7 @@ github:
 ### Hello
 
 {::nomarkdown}
-<svg width="400" height=300>
-    <circle cx="150" cy="100" r="10" fill="blue"/>
+<svg width="300" height=300>
+    <circle cx="150" cy="100" r="50" fill="linen"/>
 </svg>
 {:/}
