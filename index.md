@@ -1,5 +1,7 @@
 ---
+title: main-page
 layout: default
+filename: index
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
