@@ -12,6 +12,9 @@ order: 1
 
 ### Prarthana Gupta
 
+
+<img src="https://media.giphy.com/media/qLHzYjlA2FW8g/giphy.gif" />
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
