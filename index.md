@@ -1,5 +1,5 @@
 ---
-title: Hi GHC, welcome to *How to Stay in Control of Your Early Career Success*!
+title: Hi GHC, welcome to <em>How to Stay in Control of Your Early Career Success</em>!
 button-title: Home
 description: Our session is divided into three segments, recognizing a growth mindset, finding an environment that celebrates failure (and how to build one for yourself), and building a network that behaves as your safety net while helping you grow. Our interactive website has content to help you reflect on each segment.
 layout: default
