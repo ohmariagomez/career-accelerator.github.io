@@ -25,7 +25,10 @@
     border: 3px solid lightseagreen;
     color : lightseagreen;
 }
-
+.start-btn {
+    font-size: 100px;
+    margin-top: 150px;
+}
 #question{
     width:500px;
     height : 125px;
