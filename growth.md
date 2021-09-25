@@ -13,6 +13,22 @@ github:
 
 {::nomarkdown}
 
+<body>
+<div id="container">
+        <div id="start">Start Goals Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
 <svg xmlns="http://www.w3.org/2000/svg"
 viewBox="0 0 30 20"
 onload="makeDraggable(evt)">
