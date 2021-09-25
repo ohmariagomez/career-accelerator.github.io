@@ -9,7 +9,7 @@ order: 2
 github:
   is_project_page: false
 --- 
-### Helloooooo
+### Can you classify which goals are **growth mindset** vs. **checklist** oriented?
 
 
 {::nomarkdown}
@@ -22,7 +22,7 @@ github:
 </head>
 <body>
     <div id="container">
-        <div id="start">Start Quiz!</div>
+        <div id="start">Start Goals Quiz!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="qImg"></div>
