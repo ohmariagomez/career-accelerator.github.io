@@ -26,8 +26,8 @@ github:
             <div id="question"></div>
             <div id="qImg"></div>
             <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+                <button class="choice" id="B" onclick="checkAnswer('B')"></button>
             </div>
             <div id="timer">
                 <div id="counter"></div>
@@ -35,6 +35,7 @@ github:
                 <div id="timeGauge"></div>
             </div>
             <div id="progress"></div>
+            <div id="choiceResponse" style="display: none"></div>
         </div>
         <div id="scoreContainer" style="display: none"></div>
     </div>
