@@ -13,6 +13,8 @@ github:
 
 {::nomarkdown}
 <svg width="300" height=300>
-    <circle cx="150" cy="100" r="50" fill="linen"/>
+    <circle cx="150" cy="100" r="50" fill="linen"/>.draggable {
+  cursor: move;
+}
 </svg>
 {:/}
