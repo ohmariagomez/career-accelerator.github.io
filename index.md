@@ -2,6 +2,7 @@
 title: Home
 layout: default
 filename: index
+order: 1
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
