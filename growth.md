@@ -21,7 +21,7 @@ github:
 </head>
 <body>
     <div id="container">
-        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Start Goals Quiz!!</button></div>
+        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Start Goals Quiz!</button></div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="qImg"></div>
@@ -38,6 +38,8 @@ github:
             <div id="choiceResponse" style="display: none"></div>
         </div>
         <div id="scoreContainer" style="display: none"></div>
+        <div id="scoreBlock" style="display: none"></div>
+        <div id="scoreMessage" style="display: none"></div>
         <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
     </div>
     <script src="goals_quiz.js"></script>
