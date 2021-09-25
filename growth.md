@@ -1,5 +1,6 @@
 ---
 title: Growth Mindset
+button-title: Growth
 layout: default
 filename: growth
 order: 2
