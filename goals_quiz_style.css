@@ -8,22 +8,21 @@
     position: relative;
 }
 #start{
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bolder;
     word-break: break-all;
     width:200px;
     height:150px;
-    border : 2px solid linen;
     text-align: center;
     cursor: pointer;
     position: absolute;
     left:200px;
     top:50px;
-    color : linen;
+    color : darkseagreen;
 }
 #start:hover{
-    border: 3px solid lightseagreen;
-    color : lightseagreen;
+    border: 3px solid midnightblue;
+    color : midnightblue;
 }
 .start-btn {
     font-size: 1.5em;
@@ -32,7 +31,7 @@
 
 button {
     width: 250px;
-    height: 60px;
+    height: 150px;
     border-radius: 23px;
     margin: 25px 20px 25px 20px;
     font-size: 15px;
