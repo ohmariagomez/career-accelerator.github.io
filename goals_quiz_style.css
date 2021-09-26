@@ -14,19 +14,17 @@
     width:200px;
     height:150px;
     text-align: center;
+    border : 2px solid linen;
+    border-radius: 23px;
     cursor: pointer;
     position: absolute;
-    left:200px;
+    left:250px;
     top:50px;
     color : darkseagreen;
 }
 #start:hover{
     border: 3px solid midnightblue;
     color : midnightblue;
-}
-.start-btn {
-    font-size: 1.5em;
-    margin-top: 150px;
 }
 
 button {
