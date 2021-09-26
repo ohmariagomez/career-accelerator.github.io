@@ -8,13 +8,13 @@
     position: relative;
 }
 #start{
-    font-size: 1em;
+    font-size: 20px;
     font-weight: bolder;
     word-break: break-all;
     width:200px;
     height:150px;
     text-align: center;
-    border : 2px solid linen;
+    border : 2px solid darkseagreen;
     border-radius: 23px;
     cursor: pointer;
     position: absolute;
@@ -26,10 +26,14 @@
     border: 3px solid midnightblue;
     color : midnightblue;
 }
+.start-btn {
+    font-size: 20px;
+    margin-top: 150px;
+}
 
 button {
     width: 250px;
-    height: 150px;
+    height: 60px;
     border-radius: 23px;
     margin: 25px 20px 25px 20px;
     font-size: 15px;
@@ -60,12 +64,12 @@ button {
     display: inline-block;
     width : 135px;
     text-align: center;
-    border : 1px solid linen;
+    border : 1px solid darkslategrey;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
 }
 .choice:hover{
-    border : 2px solid linen;
+    border : 2px solid darkseagreen;
     font-weight: bold;
 }
