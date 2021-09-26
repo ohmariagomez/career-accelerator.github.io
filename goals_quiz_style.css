@@ -11,13 +11,13 @@
     font-size: 1.5em;
     font-weight: bolder;
     word-break: break-all;
-    width:100px;
+    width:200px;
     height:150px;
     border : 2px solid linen;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left:300px;
+    left:200px;
     top:50px;
     color : linen;
 }
