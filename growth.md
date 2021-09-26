@@ -24,7 +24,7 @@ School/college might have trained people into adopting the “checking boxes” 
 </head>
 <body>
     <div id="container">
-        <div id="start"><button class="start-btn" onClick= "beginQuiz()"><span>Start Goals Quiz!!</span></button></div>
+        <div id="start"><button onClick= "beginQuiz()"><span>Start Goals Quiz!!!</span></button></div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="qImg"></div>
