@@ -77,7 +77,8 @@ button {
 #choices{
     width : 480px;
     position: absolute;
-    right : 20;
+    right : 0;
+    left: 10
     top : 125px;
     padding : 10px
 }
