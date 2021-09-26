@@ -9,7 +9,7 @@ order: 2
 github:
   is_project_page: false
 --- 
-&nbsp;&nbsp;&nbsp;### Can you classify which goals are **growth mindset** vs. **checklist** oriented?
+### Can you classify which goals are **growth mindset** vs. **checklist** oriented?
 
 {::nomarkdown}
 <!DOCTYPE html>
