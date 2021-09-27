@@ -85,8 +85,8 @@
     font-size: 20px;
     font-weight: bolder;
     word-break: normal;
-    width:280px;
-    height:100px;
+    width:100;
+    height:50;
     border : 2px solid CornflowerBlue;
     border-radius: 23px;
     text-align: center;
