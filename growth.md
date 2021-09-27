@@ -10,9 +10,10 @@ github:
   is_project_page: false
 --- 
 ### What is a growth goal and why is it important?
-School/college might have trained people into adopting the “checking boxes” mindset by emphasizing on grades and test scores. However, it is important to acknowledge that techniques that led to success in school may not necessarily mean success in the workplace e.g., one can cram for a test the night before and ace it but not retain much of that learning in the long-term. 
+School/college might have trained people into adopting the “checking boxes” mindset by emphasizing on grades and test scores. However, it is important to acknowledge that techniques that led to success in school may not necessarily mean success in the workplace e.g., one can cram for a test the night before and ace it but not retain much of that learning in the long-term.
 
 ### Can you classify which goals are **growth mindset** vs. **checklist** oriented?
+Remember: Checklist goals are done once you reach them. Growth goals will stay with you and help you with future endeavors.
 
 {::nomarkdown}
 <!DOCTYPE html>
