@@ -5,6 +5,8 @@ description: Our session is divided into three segments, recognizing a growth mi
 layout: default
 filename: index
 order: 1
+github:
+  is_project_page: true
 ---
 
 # Who are we?
