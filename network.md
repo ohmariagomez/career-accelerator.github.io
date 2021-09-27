@@ -21,7 +21,7 @@ There are certain people (such as a manager and team) that one has no say in bei
 3. Strategic partner
 > These are people at work who are in a position that allows them to create opportunities for you, shield you from failure, and advocate for you. Strategic partners will play a key role in helping you achieve your goals and de-risking the environment you experiment in.
 
-## Can you classify the following personas into one of the 3 network categories?
+## Can you classify the following personas into a network type?
 
 {::nomarkdown}
 <!DOCTYPE html>
