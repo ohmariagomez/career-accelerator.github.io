@@ -8,8 +8,8 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
-const scoreBlock = document.getElementById("scoreBlock");
 const scoreMessage = document.getElementById("scoreMessage");
+const quizAgain = document.getElementById("quizAgain");
 
 // create our questions
 let questions = [
@@ -146,10 +146,18 @@ function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
         score++;
+        // display correct
+        choices.style.display = "none";
+        choiceResponse.innerHTML= "<p>Correct!</p>"
+        choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
     }else{
         // answer is wrong
+        // display wrong!
+        choices.style.display = "none";
+        choiceResponse.innerHTML= "<p>Incorrect!</p>"
+        choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
     }
@@ -175,24 +183,31 @@ function answerIsWrong(){
 
 // score render
 function scoreRender(){
+    quiz.style.display = "none";
     scoreDiv.style.display = "block";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of 11!</p>";
     
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
     
-    // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
+    if (score < 4) {
+        scoreMessage.innerHTML = "<p>Try reading through our growth poster section and try again!</p>";
+    }
+    else if (score < 8) {
+        scoreMessage.innerHTML = "<p>Pretty good! Do you think you can read more about a growth mindset to improve your score?</p>"
+    }
+    else {
+        scoreMessage.innerHTML = "<p>Great work! Time to start setting growth goals!</p>"
+    }
+    scoreMessage.style.display = "block";
+    quizAgain.style.display = "block";
     
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }
 
 function restartQuiz() {
     start.style.display = "block";
-    scoreBlock.style.display = "none";
+    scoreDiv.style.display = "none";
     scoreMessage.style.display = "none";
     quizAgain.style.display = "none";
     score = 0;
