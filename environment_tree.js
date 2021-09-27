@@ -114,7 +114,7 @@ function answerIsWrong(){
 function scoreRender(){
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
-    scoreDiv.innerHTML = "<p> You scored " + score + " out of" + questions.length + "!!</p>";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of " + questions.length + "!</p>";
     
     if (score == 5) {
         scoreMessage.innerHTML = "<p>Awesome! You have an extremely supportive environment.</p>";
