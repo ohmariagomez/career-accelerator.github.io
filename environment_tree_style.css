@@ -24,6 +24,7 @@
     color : CornflowerBlue;
     background-color: WhiteSmoke;
     vertical-align: middle;
+    line-height: 200px;
 }
 #start:hover{
     border: 3px solid MidnightBlue;
@@ -50,7 +51,7 @@
     width : 480px;
     position: absolute;
     right : 0;
-    top : 100px;
+    top : 120px;
     padding : 10px;
 }
 .choice{
