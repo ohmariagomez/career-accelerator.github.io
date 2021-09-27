@@ -23,7 +23,7 @@ Answer these 5 questions about your work environment to get a rating on how supp
 </head>
 <body>
     <div id="container">
-        <div id="start" onClick= "beginQuiz()">Start environment quiz!</div>
+        <div id="start" onClick= "beginQuiz()">Start Environment Quiz!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div id="choices">
