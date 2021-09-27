@@ -85,7 +85,7 @@ button {
     word-break: normal;
     text-align: center;
     position: absolute;
-    left:300px;
+    width : 820px;
     top:50px;
     color : Slategray;
 }
@@ -95,7 +95,7 @@ button {
     word-break: normal;
     text-align: center;
     position: absolute;
-    left:250px;
+    width : 820px;
     top:100px;
     color : SteelBlue;
     font-weight: bolder;
