@@ -55,22 +55,21 @@ button {
 }
 
 #choices{
-    width : 700px;
+    width : 480px;
     position: absolute;
     right:0;
     top : 110px;
     padding : 10px;
-    text-align: center;
 }
 .choice{
     display: inline-block;
     width : 135px;
     text-align: center;
     border : 1px solid SlateBlue;
-    color: SlateBlue;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
+    color: SlateBlue;
     background-color: #E1DEF5
 ;
 }
