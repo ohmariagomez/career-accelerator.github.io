@@ -79,3 +79,9 @@ button {
     color: Violet;
     background-color: SlateBlue;
 }
+
+.quizRestart {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
