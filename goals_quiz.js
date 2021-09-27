@@ -181,7 +181,7 @@ function checkAnswer(answer){
     count = 0;
     if(runningQuestion < lastQuestion){
         runningQuestion++;
-        renderQuestion();
+        setTimeout(renderQuestion,2000);
     }else{
         // end the quiz and show the score
         scoreRender();
