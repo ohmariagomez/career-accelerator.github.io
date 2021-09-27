@@ -33,7 +33,8 @@ let questions = [
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
         correct : "D",
-        response: "This person is a combination of two network types: a mentor and a strategic partner."
+        response: "This person is a combination of two network types: a mentor and a strategic partner.",
+        imgSrc: "combo_amy_porter.png"
     },
     {
         question : "persona 3",
@@ -42,7 +43,8 @@ let questions = [
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
         correct : "C",
-        response: "This person is a strategic partner."
+        response: "This person is a strategic partner.",
+        imgSrc: "partner_lily_petrovich.png"
     },
     {
         question : "persona 4",
@@ -51,7 +53,8 @@ let questions = [
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
         correct : "A",
-        response: "This person is a mentor."
+        response: "This person is a mentor.",
+        imgSrc: "mentor_farah_abdullah.png"
     }
 ];
 
@@ -75,6 +78,7 @@ function renderQuestion(){
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
+    choices.style.display = "block";
 }
 
 start.addEventListener("click",startQuiz);
