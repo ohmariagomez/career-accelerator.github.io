@@ -56,8 +56,8 @@ button {
 #choices{
     width : 480px;
     position: absolute;
-    right : 10;
-    top : 300px;
+    right : 50;
+    top : 500px;
     padding : 10px
 }
 .choice{
