@@ -106,6 +106,7 @@ let score = 0;
 
 // render a question
 function renderQuestion(){
+    choiceResponse.style.display = "none";
     let q = questions[runningQuestion];
     
     question.innerHTML = "<p>"+ q.question +"</p>";
