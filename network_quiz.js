@@ -2,17 +2,17 @@
 const start = document.getElementById("start");
 const quiz = document.getElementById("quiz");
 const question = document.getElementById("question");
+const choices = document.getElementById("choices");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const choiceD = document.getElementById("D");
-const counter = document.getElementById("counter");
-const timeGauge = document.getElementById("timeGauge");
+const quizImg = document.getElementById("quizImg");
+const choiceResponse = document.getElementById("choiceResponse");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const scoreMessage = document.getElementById("scoreMessage");
 const quizAgain = document.getElementById("quizAgain");
-const quizImg = document.getElementById("quizImg");
 
 // create our questions
 let questions = [
@@ -62,10 +62,6 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 10; // 10s
-const gaugeWidth = 150; // 150px
-const gaugeUnit = gaugeWidth / questionTime;
-let TIMER;
 let score = 0;
 
 // render a question
@@ -90,8 +86,6 @@ function startQuiz(){
     renderQuestion();
     quiz.style.display = "block";
     renderProgress();
-    renderCounter();
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 // render progress
@@ -101,54 +95,34 @@ function renderProgress(){
     }
 }
 
-// counter render
-
-function renderCounter(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
-        count++
-    }else{
-        count = 0;
-        // change progress color to red
-        answerIsWrong();
-        if(runningQuestion < lastQuestion){
-            runningQuestion++;
-            renderQuestion();
-        }else{
-            // end the quiz and show the score
-            scoreRender();
-        }
-    }
-}
 
 // checkAnswer
-
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
         score++;
-        // display correct
+        // display correct response
         choices.style.display = "none";
-        choiceResponse.innerHTML= "<p>Correct!</p>"+"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>";
+        choiceResponse.innerHTML= "<p>Correct!</p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
-        setTimeout(renderQuestion(),3000);
+        setTimeout(renderQuestion,3000);
     }else{
         // answer is wrong
-        // display wrong!
+        // display wrong response
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p>Incorrect!</p>"+"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
-        setTimeout(renderQuestion(),3000);
+        setTimeout(renderQuestion,3000);
     }
     count = 0;
     if(runningQuestion < lastQuestion){
+        // not the last question so keep track of next question count
         runningQuestion++;
-        setTimeout(renderQuestion(),3000);
+        setTimeout(renderQuestion,3000);
     }else{
         // end the quiz and show the score
         scoreRender();
@@ -169,9 +143,9 @@ function answerIsWrong(){
 function scoreRender(){
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
-    scoreDiv.innerHTML = "<p> You scored " + score + " out of 4!</p>";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of" + questions.length + "!!</p>";
     
-    // calculate the amount of question percent answered by the user 
+    // classify scores into categories
     if (score == 4) {
         scoreMessage.innerHTML = "<p>Awesome job on identifying your network types!</p>";
     }
