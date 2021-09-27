@@ -10,6 +10,9 @@ github:
   is_project_page: false
 --- 
 
+## How supportive is your environment?
+### Answer these 5 questions about your work environment to get a rating on how supportive it is.
+
 {::nomarkdown}
 <!DOCTYPE html>
 <html lang="en">
@@ -36,9 +39,7 @@ github:
              </div>
           </div>
         </div>
-      
-            
-        
+           
     </div>
     <script src="environment_tree.js"></script>
 </body>
