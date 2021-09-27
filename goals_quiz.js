@@ -10,6 +10,8 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const scoreMessage = document.getElementById("scoreMessage");
 const quizAgain = document.getElementById("quizAgain");
+const choiceResponse = document.getElementById("choiceResponse");
+const choices = document.getElementById("choices");
 
 // create our questions
 let questions = [
@@ -161,23 +163,24 @@ function checkAnswer(answer){
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p>Correct!</p>" +"<p>"+ questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
+        setTimeout(renderQuestion,100);
         // change progress color to green
         answerIsCorrect();
-        setTimeout(renderQuestion,5000);
     }else{
         // answer is wrong
         // display wrong!
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p>Incorrect!</p>" +"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
+        setTimeout(renderQuestion,100);
         // change progress color to red
         answerIsWrong();
-        setTimeout(renderQuestion,5000);
     }
     count = 0;
     if(runningQuestion < lastQuestion){
         runningQuestion++;
         renderQuestion();
+        setTimeout(renderQuestion,100);
     }else{
         // end the quiz and show the score
         scoreRender();
