@@ -29,3 +29,53 @@
     background-color: Coral;
     vertical-align: middle;
 }
+
+button {
+    width: 250px;
+    height: 60px;
+    border-radius: 23px;
+    margin: 25px 20px 25px 20px;
+    font-size: 15px;
+    background-color:#fff;
+}
+
+#question{
+    width:500px;
+    height : 125px;
+    position: absolute;
+    right:35;
+    top:10px;
+    text-align: center;
+}
+#question p{
+    margin : 0;
+    padding : 15px;
+    font-size: 1.25em;
+}
+
+#choices{
+    width : 480px;
+    position: absolute;
+    right : 0;
+    top : 140px;
+    padding : 10px
+}
+.choice{
+    display: inline-block;
+    width : 135px;
+    text-align: center;
+    border : 1px solid SlateBlue;
+    color: SlateBlue;
+    border-radius: 5px;
+    cursor: pointer;
+    padding : 5px;
+    background-color: #E1DEF5
+;
+}
+
+.choice:hover{
+    border : 2px solid Violet;
+    font-weight: bold;
+    color: Violet;
+    background-color: SlateBlue;
+}
