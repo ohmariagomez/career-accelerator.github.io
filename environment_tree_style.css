@@ -86,7 +86,7 @@
     word-break: normal;
     text-align: center;
     position: absolute;
-    left:250px;
+    left:280px;
     top:50px;
     color : Slategray;
 }
@@ -96,7 +96,8 @@
     word-break: normal;
     text-align: center;
     position: absolute;
-    left:200px;
+    margin-left: auto;
+    margin-right: auto;
     top:100px;
     color : SteelBlue;
     font-weight: bolder;
