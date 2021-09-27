@@ -31,7 +31,7 @@ let questions = [
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "A combination of two",
+        choiceD: "Fits multiple",
         correct : "D",
         response: "This person is a combination of two network types: a mentor and a strategic partner.",
         imgSrc: "combo_amy_porter.png"
