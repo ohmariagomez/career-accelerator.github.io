@@ -78,7 +78,6 @@ function renderQuestion(){
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
-    choices.style.display = "block";
 }
 
 start.addEventListener("click",startQuiz);
