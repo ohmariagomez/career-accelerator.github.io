@@ -11,7 +11,7 @@ github:
 --- 
 
 ## How supportive is your environment?
-### Answer these 5 questions about your work environment to get a rating on how supportive it is.
+> Answer these 5 questions about your work environment to get a rating on how supportive it is.
 
 {::nomarkdown}
 <!DOCTYPE html>
