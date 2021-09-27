@@ -50,3 +50,48 @@ let runningQuestion = 0;
 let count = 0;
 let score = 0;
 
+// getQuestion function
+
+function getQuestion() {
+
+    choiceResponse.style.display = "none";
+    let q = questions[questionIndex];
+    quizQuestion.innerHTML = "<p>Question " +(questionIndex+1) + ": " + q.question + "</p>";
+    optionA.innerHTML = q.choiceA;
+    optionB.innerHTML = q.choiceB;
+    choices.style.display = "block";
+}
+
+start.addEventListener("click",startQuiz);
+
+// start quiz
+
+function beginQuiz() {
+    start.style.display ="none";
+    getQuestion();
+    quiz.style.display = "block";
+}
+
+// checkAnswer
+
+function checkAnswer(answer){
+    if( answer == questions[runningQuestion].correct){
+        // answer is correct
+        score++;
+        // change progress color to green
+        answerIsCorrect();
+    }else{
+        // answer is wrong
+        // change progress color to red
+        answerIsWrong();
+    }
+    count = 0;
+    if(runningQuestion < lastQuestion){
+        runningQuestion++;
+        renderQuestion();
+    }else{
+        // end the quiz and show the score
+        scoreRender();
+    }
+}
+
