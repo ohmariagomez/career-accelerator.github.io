@@ -168,7 +168,7 @@ function checkAnswer(answer){
         // answer is wrong
         // display wrong!
         choices.style.display = "none";
-        choiceResponse.innerHTML= "<p>Incorrect!</p>" +"<p>"+questions[runningQuestion].response+"</p>";
+        choiceResponse.innerHTML= "<p>Incorrect!</p>" +"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
