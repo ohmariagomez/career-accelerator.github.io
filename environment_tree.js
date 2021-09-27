@@ -144,7 +144,7 @@ function scoreRender(){
     scoreDiv.innerHTML = "<p> You scored " + score + " out of 5!</p>";
     
     if (score == 5) {
-        scoreMessage.innerHTML = "<p>Awesome! You have an extremely supportive environment,</p>";
+        scoreMessage.innerHTML = "<p>Awesome! You have an extremely supportive environment.</p>";
     }
     else if (score >= 3 && score <= 4) {
         scoreMessage.innerHTML = "<p>Not bad. Your environment is slightly supportive.</p>"
