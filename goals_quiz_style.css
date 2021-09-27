@@ -46,7 +46,7 @@ button {
     height : 125px;
     position: absolute;
     right:35;
-    top:0;
+    top:10px;
     text-align: center;
 }
 #question p{
