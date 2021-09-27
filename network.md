@@ -39,7 +39,10 @@ There are certain people (such as a manager and team) that one has no say in bei
             <div id="choices">
                 <button class="choice" id="A" onclick="checkAnswer('A')"></button>
                 <button class="choice" id="B" onclick="checkAnswer('B')"></button>
-              <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+                <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+                <button class="choice" id="D" onclick="checkAnswer('D')"></button>
+                <button class="choice" id="E" onclick="checkAnswer('E')"></button>
+                <button class="choice" id="F" onclick="checkAnswer('F')"></button>
             </div>
             <div id="progress"></div>
             <div id="choiceResponse" style="display: none"></div>
