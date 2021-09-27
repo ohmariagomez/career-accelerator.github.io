@@ -22,12 +22,13 @@ github:
     <link rel="stylesheet" href="environment_tree_style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Find out how supportive your environment is!</button></div>
+    <div id="container">
+        <div id="start" onClick= "beginQuiz()">Find out how supportive your environment is!</div>
         <div id="quiz" style="display: none"></div>
+          <div id="question"></div>
           <div id="choices">
-            <button id="choiceA" onclick="check('A')"></button>
-            <button id="choiceB" onclick="check('B')"></button>
+            <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+            <button class="choice" id="B" onclick="checkAnswer('B')"></button>
           </div>
           <div id="choiceResponse" style="display: none"></div>
           <div class="footer">
