@@ -17,7 +17,7 @@ const quizImg = document.getElementById("quizImg");
 // create our questions
 let questions = [
     {
-        question : "persona 1",
+        question : "",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
@@ -27,7 +27,7 @@ let questions = [
         imgSrc: "friend_michael_brook.png"
     },
     {
-        question : "persona 2",
+        question : "",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
@@ -37,7 +37,7 @@ let questions = [
         imgSrc: "combo_amy_porter.png"
     },
     {
-        question : "persona 3",
+        question : "",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
@@ -47,7 +47,7 @@ let questions = [
         imgSrc: "partner_lily_petrovich.png"
     },
     {
-        question : "persona 4",
+        question : "",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
