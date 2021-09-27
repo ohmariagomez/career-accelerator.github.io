@@ -64,20 +64,20 @@ button {
     display: inline-block;
     width : 150px;
     text-align: center;
-    border : 1px solid SlateBlue;
-    color: SlateBlue;
+    border : 1px solid IndianRed;
+    color: IndianRed;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
-    background-color: #E1DEF5
+    background-color: LightSalmon;
 ;
 }
 
 .choice:hover{
-    border : 2px solid Violet;
+    border : 2px solid OrangeRed;
     font-weight: bold;
-    color: Violet;
-    background-color: SlateBlue;
+    color: OrangeRed;
+    background-color: Salmon;
 }
 
 #scoreContainer {
