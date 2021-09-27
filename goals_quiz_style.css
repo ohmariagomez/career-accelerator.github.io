@@ -23,7 +23,7 @@
     color : SteelBlue;
     background-color: #f6f9fb;
     vertical-align: middle;
-    line-height: 40px;
+    line-height: 10px;
 }
 #start:hover{
     border: 3px solid midnightblue;
