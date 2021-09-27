@@ -164,3 +164,32 @@ function answerIsWrong(){
     document.getElementById(runningQuestion).style.backgroundColor = "red";
 }
 
+// score render
+function scoreRender(){
+    quiz.style.display = "none";
+    scoreDiv.style.display = "block";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of 4!</p>";
+    
+    // calculate the amount of question percent answered by the user 
+    if (score == 4) {
+        scoreMessage.innerHTML = "<p>Awesome job on identifying your network types!</p>";
+    }
+    else if (score >= 1 && score <= 3) {
+        scoreMessage.innerHTML = "<p>Not bad!</p>"
+    }
+    else {
+        scoreMessage.innerHTML = "<p>Try reading through our network type descriptions and try again!</p>"
+    }
+    scoreMessage.style.display = "block";
+    quizAgain.style.display = "block";
+   
+}
+
+function restartQuiz() {
+    start.style.display = "block";
+    scoreDiv.style.display = "none";
+    scoreMessage.style.display = "none";
+    quizAgain.style.display = "none";
+    score = 0;
+    runningQuestion = 0;
+}
