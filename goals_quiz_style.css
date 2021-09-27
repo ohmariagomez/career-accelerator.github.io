@@ -8,7 +8,7 @@
     position: relative;
 }
 #start{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bolder;
     word-break: break-all;
     width:200px;
@@ -67,6 +67,7 @@ button {
 }
 
 .choice:hover{
-    border : 2px solid grey;
+    border : 2px solid darkslategrey;
     font-weight: bold;
+    color: darkslategrey
 }
