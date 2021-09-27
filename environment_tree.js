@@ -8,6 +8,7 @@ const counter = document.getElementById("counter");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const scoreMessage = document.getElementById("scoreMessage");
+const quizAgain = document.getElementById("quizAgain");
 
 // create our questions
 let questions = [
@@ -47,10 +48,6 @@ let questions = [
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;
-const questionTime = 10; // 10s
-const gaugeWidth = 150; // 150px
-const gaugeUnit = gaugeWidth / questionTime;
-let TIMER;
 let score = 0;
 
 // render a question
@@ -70,9 +67,7 @@ function startQuiz(){
     renderQuestion();
     quiz.style.display = "block";
     renderProgress();
-    renderCounter();
     progressBar.style.display = "block";
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 
@@ -83,29 +78,7 @@ function renderProgress(){
     }
 }
 
-// counter render
-
-function renderCounter(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
-        count++
-    }else{
-        count = 0;
-        // change progress color to red
-        answerIsWrong();
-        if(runningQuestion < lastQuestion){
-            runningQuestion++;
-            renderQuestion();
-        }else{
-            // end the quiz and show the score
-            scoreRender();
-        }
-    }
-}
-
 // checkAnswer
-
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
         // answer is correct
@@ -141,7 +114,7 @@ function answerIsWrong(){
 function scoreRender(){
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
-    scoreDiv.innerHTML = "<p> You scored " + score + " out of 5!</p>";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of" + questions.length + "!!</p>";
     
     if (score == 5) {
         scoreMessage.innerHTML = "<p>Awesome! You have an extremely supportive environment.</p>";
