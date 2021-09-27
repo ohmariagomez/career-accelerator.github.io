@@ -47,7 +47,6 @@ There are certain people (such as a manager and team) that one has no say in bei
             <div id="choiceResponse" style="display: none"></div>
         </div>
         <div id="scoreContainer" style="display: none"></div>
-        <div id="scoreBlock" style="display: none"></div>
         <div id="scoreMessage" style="display: none"></div>
         <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
     </div>
