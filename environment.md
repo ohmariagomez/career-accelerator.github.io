@@ -24,23 +24,19 @@ github:
 <body>
     <div id="container">
         <div id="start" onClick= "beginQuiz()">Find out how supportive your environment is!</div>
-        <div id="quiz" style="display: none"></div>
-          <div id="question"></div>
-          <div id="choices">
-            <button class="choice" id="A" onclick="checkAnswer('A')"></button>
-            <button class="choice" id="B" onclick="checkAnswer('B')"></button>
-          </div>
-          <div id="choiceResponse" style="display: none"></div>
-          <div class="footer">
-            <div class="progress" style="height: 100%;">
-              <div
-              class="progress-bar"
-              style="width: 0%; height: 100%;"
-              ></div>
-             </div>
-          </div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+                <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+            </div>
+            <div id="progress"></div>
+            <div id="choiceResponse" style="display: none"></div>
         </div>
-           
+        <div id="scoreContainer" style="display: none"></div>
+        <div id="scoreBlock" style="display: none"></div>
+        <div id="scoreMessage" style="display: none"></div>
+        <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
     </div>
     <script src="environment_tree.js"></script>
 </body>
