@@ -37,7 +37,7 @@
     height : 125px;
     position: absolute;
     right:50;
-    top:10;
+    top:50;
     text-align: center;
 }
 #question p{
@@ -97,7 +97,7 @@
     word-break: normal;
     text-align: center;
     position: absolute;
-    left:150px;
+    left:100px;
     top:100px;
     color : SteelBlue;
     font-weight: bolder;
