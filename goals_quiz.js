@@ -174,7 +174,7 @@ function answerIsWrong(){
 function scoreRender(){
     quiz.style.display = "none";
     scoreDiv.style.display = "block";
-    scoreDiv.innerHTML = "<p> You scored " + score + " out of" + questions.length + "!!</p>";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of " + questions.length + "!</p>";
     
     // classify scores into categories  
     if (score < 4) {
