@@ -79,6 +79,7 @@ function renderQuestion(){
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
+    choices.style.display = "block";
 }
 
 start.addEventListener("click",startQuiz);
@@ -133,7 +134,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
-        setTimeout(renderQuestion(),2000);
+        //setTimeout(renderQuestion(),3000);
     }else{
         // answer is wrong
         // display wrong!
@@ -142,12 +143,12 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
-        setTimeout(renderQuestion(),2000);
+        //setTimeout(renderQuestion(),3000);
     }
     count = 0;
     if(runningQuestion < lastQuestion){
         runningQuestion++;
-        setTimeout(renderQuestion(),2000);
+        setTimeout(renderQuestion(),3000);
     }else{
         // end the quiz and show the score
         scoreRender();
