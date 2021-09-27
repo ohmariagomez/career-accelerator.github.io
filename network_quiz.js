@@ -12,6 +12,7 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const scoreMessage = document.getElementById("scoreMessage");
 const quizAgain = document.getElementById("quizAgain");
+const quizImg = document.getElementById("quizImg");
 
 // create our questions
 let questions = [
@@ -22,7 +23,8 @@ let questions = [
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
         correct : "B",
-        response: "This person is a friend."
+        response: "This person is a friend.",
+        imgSrc: "friend_michael_brook.png"
     },
     {
         question : "persona 2",
@@ -68,6 +70,7 @@ function renderQuestion(){
     let q = questions[runningQuestion];
     
     question.innerHTML = "<p>"+ q.question +"</p>";
+    quizImg.innerHTML = "<img src=" + q.imgSrc + ">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
