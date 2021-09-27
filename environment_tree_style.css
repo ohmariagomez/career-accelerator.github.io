@@ -22,13 +22,11 @@
     left:200px;
     top:80px;
     color : CornflowerBlue;
-    background-color: WhiteSmoke;
-    vertical-align: middle;
-    line-height: 30px;
+    background-color: AliceBlue;
 }
 #start:hover{
     border: 3px solid MidnightBlue;
-    background-color: WhiteSmoke;
+    background-color: CornflowerBlue;
     color : MidnightBlue;
     vertical-align: middle;
 }
