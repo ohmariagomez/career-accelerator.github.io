@@ -59,6 +59,7 @@ button {
     position: absolute;
     top : 110px;
     padding : 10px;
+    text-align: center;
 }
 .choice{
     display: inline-block;
