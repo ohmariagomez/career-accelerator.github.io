@@ -101,3 +101,8 @@ button {
     color : SteelBlue;
     background-color: #f6f9fb;
 }
+
+#choiceResponse {
+    color : SteelBlue;
+    top: 100px
+}
