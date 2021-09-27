@@ -23,10 +23,13 @@
     top:80px;
     color : CornflowerBlue;
     background-color: LightCyan;
+    vertical-align: middle;
 }
 #start:hover{
     border: 3px solid MidnightBlue;
+    background-color: AliceBlue;
     color : MidnightBlue;
+    vertical-align: middle;
 }
 
 #question{
