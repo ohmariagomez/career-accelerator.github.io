@@ -220,8 +220,7 @@ function scoreRender(){
     }
     scoreMessage.style.display = "block";
     quizAgain.style.display = "block";
-    
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+
 }
 
 function restartQuiz() {
