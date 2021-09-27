@@ -144,7 +144,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
-        setTimeout(getQuestion,2000);
+        setTimeout(renderQuestion,2000);
     }else{
         // answer is wrong
         // display wrong!
@@ -153,7 +153,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
-        setTimeout(getQuestion,2000);
+        setTimeout(renderQuestion,2000);
     }
     count = 0;
     if(runningQuestion < lastQuestion){
