@@ -21,7 +21,7 @@ let questions = [
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "A combination of two",
+        choiceD: "Fits multiple",
         correct : "B",
         response: "This person is a friend.",
         imgSrc: "friend_michael_brook.png"
@@ -41,7 +41,7 @@ let questions = [
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "A combination of two",
+        choiceD: "Fits multiple",
         correct : "C",
         response: "This person is a strategic partner.",
         imgSrc: "partner_lily_petrovich.png"
@@ -51,7 +51,7 @@ let questions = [
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "A combination of two",
+        choiceD: "Fits multiple",
         correct : "A",
         response: "This person is a mentor.",
         imgSrc: "mentor_farah_abdullah.png"
