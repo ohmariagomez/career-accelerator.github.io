@@ -165,5 +165,5 @@ function restartQuiz() {
     scoreMessage.style.display = "none";
     quizAgain.style.display = "none";
     score = 0;
-    questionIndex = 0;
+    runningQuestion = 0;
 }
