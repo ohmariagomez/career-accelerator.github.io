@@ -72,8 +72,10 @@ function startQuiz(){
     quiz.style.display = "block";
     renderProgress();
     renderCounter();
+    progressBar.style.display = "block";
     TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
+
 
 // render progress
 function renderProgress(){
