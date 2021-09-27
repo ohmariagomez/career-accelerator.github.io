@@ -57,7 +57,7 @@ button {
 #choices{
     width : 800px;
     position: absolute;
-    top : 500px;
+    top : 490px;
     padding : 10px
 }
 .choice{
@@ -129,7 +129,7 @@ button {
     color : SteelBlue;
     text-align: center;
     position: absolute;
-    top: 550px;
+    top: 500px;
     width : 820px;
 }
 .img-div {
