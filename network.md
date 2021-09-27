@@ -33,7 +33,7 @@ There are certain people (such as a manager and team) that one has no say in bei
 </head>
 <body>
     <div id="container">
-        <div id="start" onClick= "beginQuiz()">Meet our personas!</div>
+        <div id="start" onClick= "beginQuiz()">Meet our Personas!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
             <div class = "img-div" id="quizImg"></div>
