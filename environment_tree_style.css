@@ -63,13 +63,13 @@
     cursor: pointer;
     padding : 5px;
     color: SandyBrown;
-    background-color: WhiteSmoke;
+    background-color: PapayaWhip;
 }
 .choice:hover{
     border : 2px solid Sienna;
     font-weight: bold;
     color: Sienna;
-    background-color: WhiteSmoke;
+    background-color: SandyBrown;
 }
 
 .progress {
