@@ -152,7 +152,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
-        setTimeout(getQuestion,2000);
+        setTimeout(renderQuestion,5000);
     }else{
         // answer is wrong
         // display wrong!
@@ -161,7 +161,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
-        setTimeout(getQuestion,2000);
+        setTimeout(renderQuestion,5000);
     }
     count = 0;
     if(runningQuestion < lastQuestion){
@@ -213,5 +213,5 @@ function restartQuiz() {
     scoreMessage.style.display = "none";
     quizAgain.style.display = "none";
     score = 0;
-    questionIndex = 0;
+    runningQuestion = 0;
 }
