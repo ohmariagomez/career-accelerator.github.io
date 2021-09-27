@@ -36,6 +36,7 @@ There are certain people (such as a manager and team) that one has no say in bei
         <div id="start" onClick= "beginQuiz()">Meet our personas!</div>
         <div id="quiz" style="display: none">
             <div id="question"></div>
+            <div class = "img-div" id="quizImg"></div>
             <div id="choices">
                 <button class="choice" id="A" onclick="checkAnswer('A')"></button>
                 <button class="choice" id="B" onclick="checkAnswer('B')"></button>
