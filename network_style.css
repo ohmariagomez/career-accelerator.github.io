@@ -107,7 +107,8 @@ button {
     color : SteelBlue;
     text-align: center;
     position: absolute;
-    top: 450px
+    top: 550px;
+    left: 200px
 }
 .img-div {
     text-align: center;
