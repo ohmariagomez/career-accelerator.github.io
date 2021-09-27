@@ -14,17 +14,18 @@
     word-break: break-all;
     width:220px;
     height:100px;
-    border : 2px solid lightgrey;
+    border : 2px solid CornflowerBlue;
+    border-radius: 23px;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left:300px;
-    top:50px;
-    color : lightgrey;
+    eft:250px;
+    top:70px;
+    color : CornflowerBlue;
 }
 #start:hover{
-    border: 3px solid lightseagreen;
-    color : lightseagreen;
+    border: 3px solid MidnightBlue;
+    color : MidnightBlue;
 }
 
 #question{
@@ -44,7 +45,7 @@
     width : 480px;
     position: absolute;
     right : 0;
-    top : 125px;
+    top : 200px;
     padding : 10px
 }
 .choice{
