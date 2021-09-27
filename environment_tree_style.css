@@ -87,7 +87,7 @@
     word-break: normal;
     text-align: center;
     position: absolute;
-    left:260px;
+    width: 700px;
     top:50px;
     color : Slategray;
 }
