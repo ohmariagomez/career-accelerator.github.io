@@ -163,24 +163,25 @@ function checkAnswer(answer){
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p>Correct!</p>" +"<p>"+ questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
-        setTimeout(renderQuestion,100);
         // change progress color to green
         answerIsCorrect();
+        setTimeout(renderQuestion,2000);
+        
     }else{
         // answer is wrong
         // display wrong!
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p>Incorrect!</p>" +"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
-        setTimeout(renderQuestion,100);
         // change progress color to red
         answerIsWrong();
+        setTimeout(renderQuestion,2000);
+        
     }
     count = 0;
     if(runningQuestion < lastQuestion){
         runningQuestion++;
         renderQuestion();
-        setTimeout(renderQuestion,100);
     }else{
         // end the quiz and show the score
         scoreRender();
