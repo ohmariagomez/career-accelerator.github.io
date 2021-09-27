@@ -102,7 +102,7 @@ button {
     background-color: #f6f9fb;
 }
 
-.choiceResponse {
+#choiceResponse {
     color : SteelBlue;
     top: 100px
 }
