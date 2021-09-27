@@ -45,7 +45,7 @@ button {
     height : 125px;
     position: absolute;
     right:0;
-    top:10px;
+    top:50px;
     text-align: center;
 }
 #question p{
@@ -57,10 +57,10 @@ button {
 #choices{
     width : 700px;
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
+    right:0;
     top : 110px;
-    padding : 10px
+    padding : 10px;
+    text-align: center;
 }
 .choice{
     display: inline-block;
