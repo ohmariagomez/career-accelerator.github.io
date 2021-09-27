@@ -81,6 +81,21 @@
   background-color: green;
 }
 
+#scoreMessage{
+    font-size: 20px;
+    font-weight: bolder;
+    word-break: normal;
+    width:250px;
+    height:100px;
+    text-align: center;
+    border : 2px solid SteelBlue;
+    cursor: pointer;
+    position: absolute;
+    left:250px;
+    top:100px;
+    color : SteelBlue;
+}
+
 #quizAgain{
     font-size: 15px;
     font-weight: bolder;
@@ -92,8 +107,8 @@
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left:200px;
-    top:100px;
+    left:300px;
+    top:200px;
     color : CornflowerBlue;
     background-color: AliceBlue;
 }
