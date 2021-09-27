@@ -6,8 +6,6 @@ const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
 const choiceD = document.getElementById("D");
-const choiceE = document.getElementById("E");
-const choiceF = document.getElementById("F");
 const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
@@ -22,49 +20,31 @@ let questions = [
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "Mentor & friend",
-        choiceE: "Mentor & strategic partner",
-        choiceF: "Friend & strategic partner",
-        correct : "A"
+        choiceD: "A combination of two",
+        correct : "B"
     },
     {
         question : "persona 2",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "Mentor & friend",
-        choiceE: "Mentor & strategic partner",
-        choiceF: "Friend & strategic partner",
-        correct : "A"
+        choiceD: "A combination of two",
+        correct : "D"
     },
     {
         question : "persona 3",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "Mentor & friend",
-        choiceE: "Mentor & strategic partner",
-        choiceF: "Friend & strategic partner",
-        correct : "A"
+        choiceD: "A combination of two",
+        correct : "C"
     },
     {
         question : "persona 4",
         choiceA : "Mentor",
         choiceB : "Friend",
         choiceC: "Strategic partner",
-        choiceD: "Mentor & friend",
-        choiceE: "Mentor & strategic partner",
-        choiceF: "Friend & strategic partner",
-        correct : "A"
-    },
-    {
-        question : "persona 5",
-        choiceA : "Mentor",
-        choiceB : "Friend",
-        choiceC: "Strategic partner",
-        choiceD: "Mentor & friend",
-        choiceE: "Mentor & strategic partner",
-        choiceF: "Friend & strategic partner",
+        choiceD: "A combination of two",
         correct : "A"
     }
 ];
@@ -88,8 +68,6 @@ function renderQuestion(){
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
-    choiceE.innerHTML = q.choiceE;
-    choiceF.innerHTML = q.choiceF;
 }
 
 start.addEventListener("click",startQuiz);
