@@ -90,8 +90,8 @@ button {
     cursor: pointer;
     padding : 5px;
 }
+
 .choice:hover{
-    border : 2px solid darkorange;
-    color: darkorange
+    border : 2px solid grey;
     font-weight: bold;
 }
