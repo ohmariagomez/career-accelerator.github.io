@@ -52,14 +52,16 @@
     display: inline-block;
     width : 135px;
     text-align: center;
-    border : 1px solid grey;
+    border : 1px solid SandyBrown;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
+    color: SandyBrown;
 }
 .choice:hover{
-    border : 2px solid grey;
+    border : 2px solid Sienna;
     font-weight: bold;
+    color: Sienna;
 }
 
 .progress {
