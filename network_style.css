@@ -86,7 +86,7 @@ button {
     text-align: center;
     position: absolute;
     width : 820px;
-    top:50px;
+    top:70px;
     color : Slategray;
 }
         
@@ -96,7 +96,7 @@ button {
     text-align: center;
     position: absolute;
     width : 820px;
-    top:100px;
+    top:120px;
     color : SteelBlue;
     font-weight: bolder;
 }
