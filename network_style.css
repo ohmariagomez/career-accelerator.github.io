@@ -13,6 +13,7 @@
     word-break: break-all;
     width:220px;
     height:80px;
+    line-height: 80px;
     text-align: center;
     border : 2px solid Coral;
     border-radius: 23px;
