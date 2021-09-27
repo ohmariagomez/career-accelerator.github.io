@@ -19,7 +19,25 @@ github:
     <link rel="stylesheet" href="environment_tree_style.css">
 </head>
 <body>
-    <div id="container">
+    <div class="container">
+        <div id="start"><button class="start-btn" onClick= "beginQuiz()">Find out how supportive your environment is!</button></div>
+        <div id="quiz" style="display: none"></div>
+          <div id="choices">
+            <button id="choiceA" onclick="check('A')"></button>
+            <button id="choiceB" onclick="check('B')"></button>
+          </div>
+          <div id="choiceResponse" style="display: none"></div>
+          <div class="footer">
+            <div class="progress" style="height: 100%;">
+              <div
+              class="progress-bar"
+              style="width: 0%; height: 100%;"
+              ></div>
+             </div>
+          </div>
+        </div>
+      
+            
         
     </div>
     <script src="environment_tree.js"></script>
