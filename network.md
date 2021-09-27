@@ -22,3 +22,34 @@ There are certain people (such as a manager and team) that one has no say in bei
 > These are people at work who are in a position that allows them to create opportunities for you, shield you from failure, and advocate for you. Strategic partners will play a key role in helping you achieve your goals and de-risking the environment you experiment in.
 
 ## Can you classify the following personas into one of the 3 network categories?
+
+{::nomarkdown}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="network_style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start" onClick= "beginQuiz()">Meet our personas!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+                <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+              <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+            </div>
+            <div id="progress"></div>
+            <div id="choiceResponse" style="display: none"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+        <div id="scoreBlock" style="display: none"></div>
+        <div id="scoreMessage" style="display: none"></div>
+        <div><button id="quizAgain" class="quizRestart" style="display: none" onClick="restartQuiz()">Try Again!</button></div>
+    </div>
+    <script src="network_quiz.js"></script>
+</body>
+</html>
+{:/}
