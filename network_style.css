@@ -64,8 +64,8 @@ button {
     display: inline-block;
     width : 150px;
     text-align: center;
-    border : 1px solid IndianRed;
-    color: IndianRed;
+    border : 1px solid Crimson;
+    color: Crimson;
     border-radius: 5px;
     cursor: pointer;
     padding : 5px;
@@ -74,9 +74,9 @@ button {
 }
 
 .choice:hover{
-    border : 2px solid OrangeRed;
+    border : 2px solid DarkRed;
     font-weight: bold;
-    color: OrangeRed;
+    color: DarkRed;
     background-color: Salmon;
 }
 
