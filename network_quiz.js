@@ -21,7 +21,8 @@ let questions = [
         choiceB : "Friend",
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
-        correct : "B"
+        correct : "B",
+        response: "This person is a friend."
     },
     {
         question : "persona 2",
@@ -29,7 +30,8 @@ let questions = [
         choiceB : "Friend",
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
-        correct : "D"
+        correct : "D",
+        response: "This person is a combination of two network types: a mentor and a strategic partner."
     },
     {
         question : "persona 3",
@@ -37,7 +39,8 @@ let questions = [
         choiceB : "Friend",
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
-        correct : "C"
+        correct : "C",
+        response: "This person is a strategic partner."
     },
     {
         question : "persona 4",
@@ -45,7 +48,8 @@ let questions = [
         choiceB : "Friend",
         choiceC: "Strategic partner",
         choiceD: "A combination of two",
-        correct : "A"
+        correct : "A",
+        response: "This person is a mentor."
     }
 ];
 
@@ -118,7 +122,7 @@ function checkAnswer(answer){
         score++;
         // display correct
         choices.style.display = "none";
-        choiceResponse.innerHTML= "<p>Correct!</p>"
+        choiceResponse.innerHTML= "<p>Correct!</p>"+"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>"
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
@@ -127,7 +131,7 @@ function checkAnswer(answer){
         // answer is wrong
         // display wrong!
         choices.style.display = "none";
-        choiceResponse.innerHTML= "<p>Incorrect!</p>"
+        choiceResponse.innerHTML= "<p>Incorrect!</p>"+"<p></p>"+"<p>"+questions[runningQuestion].response+"</p>"
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
