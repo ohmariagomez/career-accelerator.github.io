@@ -7,7 +7,6 @@ const choiceB = document.getElementById("B");
 const counter = document.getElementById("counter");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
-const scoreBlock = document.getElementById("scoreBlock");
 const scoreMessage = document.getElementById("scoreMessage");
 
 // create our questions
@@ -140,24 +139,29 @@ function answerIsWrong(){
 
 // score render
 function scoreRender(){
+    quiz.style.display = "none";
     scoreDiv.style.display = "block";
+    scoreDiv.innerHTML = "<p> You scored " + score + " out of 5!</p>";
     
-    // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length);
-    
-    // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-              (scorePerCent >= 60) ? "img/4.png" :
-              (scorePerCent >= 40) ? "img/3.png" :
-              (scorePerCent >= 20) ? "img/2.png" :
-              "img/1.png";
-    
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    if (score == 5) {
+        scoreMessage.innerHTML = "<p>Awesome! You have an extremely supportive environment,</p>";
+    }
+    else if (score >= 3 && score <= 4) {
+        scoreMessage.innerHTML = "<p>Not bad. Your environment is slightly supportive.</p>"
+    }
+    else if (score >= 1 && score <= 2) {
+        scoreMessage.innerHTML = "<p>Not great. Your environment is supportive in some ways, but needs your work to create micro-environments.</p>"
+    }
+    else {
+        scoreMessage.innerHTML = "<p>Oh, no! Seems like your environment is not supportive. Read more about ways to get around this.</p>"
+    }
+    scoreMessage.style.display = "block";
+    quizAgain.style.display = "block";
 }
 
 function restartQuiz() {
     start.style.display = "block";
-    scoreBlock.style.display = "none";
+    scoreDiv.style.display = "none";
     scoreMessage.style.display = "none";
     quizAgain.style.display = "none";
     score = 0;
