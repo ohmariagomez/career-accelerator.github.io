@@ -27,6 +27,7 @@ Remember: Checklist goals are done once you reach them. Growth goals will stay w
     <div id="container">
         <div id="start" onClick= "beginQuiz()">Start Goals Quiz!</div>
         <div id="quiz" style="display: none">
+            <div id="goal-statement"></div>
             <div id="question"></div>
             <div id="choices">
                 <button class="choice" id="A" onclick="checkAnswer('A')"></button>
