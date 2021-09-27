@@ -1,7 +1,7 @@
 #container{
     margin : 20px auto;
     background-color: white;
-    height: 600px;
+    height: 650px;
     width : 820px;
     border-radius: 5px;
     box-shadow: 0px 5px 15px 0px;
@@ -57,7 +57,7 @@ button {
     width : 800px;
     position: absolute;
     left : 100;
-    top : 450px;
+    top : 480px;
     padding : 10px
 }
 .choice{
