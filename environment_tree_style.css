@@ -22,12 +22,12 @@
     left:250px;
     top:80px;
     color : CornflowerBlue;
-    background-color: LightCyan;
+    background-color: Snow;
     vertical-align: middle;
 }
 #start:hover{
     border: 3px solid MidnightBlue;
-    background-color: AliceBlue;
+    background-color: Snow;
     color : MidnightBlue;
     vertical-align: middle;
 }
