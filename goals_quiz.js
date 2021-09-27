@@ -17,67 +17,78 @@ let questions = [
         question : "Have better time management",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "A"
+        correct : "A",
+        response: "There are many facets of work where you will be required to manage your time, and you will need to find what strategies work best for you. Through the journey on this goal, you will explore those and see how to make those strategies truly yours."
     },
     {
         question : "Get promoted to senior technical analyst",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "B"
+        correct : "B",
+        response: "There are many ways to achieve this goal, regardless of the path you choose, there is no evolution other than pining for the next level."
     },
     {
         question : "Get an A on my class",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "B"
+        correct : "B",
+        response: "Within a few months, this is a goal you either did or did not achieve. There are not real learnings to help you with any other goals you set."
     },
     {
         question : "Enhance my coding skills in SQL and learning Python",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "A"
+        correct : "A",
+        response: "Coding for data analytics is a constant learning process, you can be an expert at SQL and start learning python, but then your goal will continue to evolve based on how you enjoy this process and what you want to grow into. For example you may want to become a python expert, or you may choose to work on data visualization instead."
     },
     {
         question : "Be more proactive in accepting new responsibilities",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "A"
+        correct : "A",
+        response: "As you advance in your career, you will be given responsibilities less frequently and be expected to pick them up yourself. Through the growth journey on this goal, you may learn that there are types of responsibilities you shy from, and evolve the goal into focusing on them."
     },
     {
         question : "Have more self-discipline on my homework",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "A"
+        correct : "A",
+        response: "You may have realized that you always get to your homework last minute and want to work on the self control to do this before time. While learning to meet this goal, you may also learn that time management isn’t your issue, it is motivation for some of the homework. As you learn more, your goal will evolve."
     },
     {
         question : "Launch my own fashion startup",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "B"
+        correct : "B",
+        response: "This is more of a motivation than a goal, you would have to set multiple goals to be able to get here and “launching” is not the same as being successful. To turn this into a growth goal say - “be successful with my fashion startup”"
     },
     {
         question : "Have a healthier lifestyle",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "A"
+        correct : "A",
+        response: "Similar to the other goals, this too could have different segments and on your journey to fulfilling it, you will find that there are segments you struggle with and segments you don’t. You will not just be successful, you will evolve your goal as you learn."
     },
     {
         question : "Learn how to do user discovery",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "A"
+        correct : "A",
+        response: "There are many different things to learn about user discovery, initially through your work to meet this goal, you will learn the basics. Then you will want to learn how to make it muscle memory and apply the right frameworks in the right place."
     },
     {
         question : "Lose 5 pounds",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "B"
+        correct : "B",
+        response: "This is a personal goal, and it is upto you to decide if you want your health journey to stop at 5 pounds or you want it to be more sustainable. While this could be a way to measure your progress, we would not suggest making it your goal."
     },
     {
         question : "Manage a team",
         choiceA : "Growth",
         choiceB : "Checklist",
-        correct : "B"
+        correct : "B",
+        response: "While this may help you grow at work, it doesn’t indicate any new skills. You can start managing a team - but what you really need to learn is the skills to manage them well."
     }
 ];
 
@@ -148,7 +159,7 @@ function checkAnswer(answer){
         score++;
         // display correct
         choices.style.display = "none";
-        choiceResponse.innerHTML= "<p>Correct!</p>"
+        choiceResponse.innerHTML= "<p>Correct!</p>" +"<p>"+ questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
@@ -157,7 +168,7 @@ function checkAnswer(answer){
         // answer is wrong
         // display wrong!
         choices.style.display = "none";
-        choiceResponse.innerHTML= "<p>Incorrect!</p>"
+        choiceResponse.innerHTML= "<p>Incorrect!</p>" +"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
