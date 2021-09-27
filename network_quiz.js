@@ -107,7 +107,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
-        setTimeout(renderQuestion,3000);
+        setTimeout(renderQuestion,4000);
     }else{
         // answer is wrong
         // display wrong response
@@ -116,13 +116,13 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
-        setTimeout(renderQuestion,3000);
+        setTimeout(renderQuestion,4000);
     }
     count = 0;
     if(runningQuestion < lastQuestion){
         // not the last question so keep track of next question count
         runningQuestion++;
-        setTimeout(renderQuestion,3000);
+        setTimeout(renderQuestion,4000);
     }else{
         // end the quiz and show the score
         scoreRender();
