@@ -125,7 +125,7 @@ function checkAnswer(answer){
         setTimeout(renderQuestion,4000);
     }else{
         // end the quiz and show the score
-        scoreRender();
+        setTimeout(scoreRender, 4000);
     }
 }
 
