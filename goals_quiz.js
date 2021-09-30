@@ -6,6 +6,7 @@ const choices = document.getElementById("choices");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceResponse = document.getElementById("choiceResponse");
+const next = document.getElementById("next");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const scoreMessage = document.getElementById("scoreMessage");
