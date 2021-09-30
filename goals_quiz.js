@@ -165,7 +165,7 @@ function checkAnswer(answer){
     }
 }
 
-next.addEventListener("click",startQuiz);
+next.addEventListener("click",renderQuestion);
 
 // answer is correct
 function answerIsCorrect(){
