@@ -159,8 +159,7 @@ function checkAnswer(answer){
         //setTimeout(renderQuestion,7000);
     }else{
         // end the quiz and show the score
-        next.style.display = "block";
-        setTimeout(scoreRender,7000);
+        setTimeout(scoreRender,6000);
     }
 }
 
