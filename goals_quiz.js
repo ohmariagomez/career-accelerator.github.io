@@ -137,7 +137,6 @@ function checkAnswer(answer){
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p><b>Correct!</b></p>" +"<p>"+ questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
-        next.style.display = "block";
         // change progress color to green
         answerIsCorrect();
         //setTimeout(renderQuestion,7000);
@@ -148,7 +147,6 @@ function checkAnswer(answer){
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p><b>Incorrect!</b></p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
-        next.style.display = "block";
         // change progress color to red
         answerIsWrong();
         //setTimeout(renderQuestion,7000);
@@ -181,6 +179,7 @@ function answerIsWrong(){
 // score render
 function scoreRender(){
     quiz.style.display = "none";
+    next.style.display = "none";
     scoreDiv.style.display = "block";
     scoreDiv.innerHTML = "<p> You scored " + score + " out of " + questions.length + "!</p>";
     
@@ -200,10 +199,11 @@ function scoreRender(){
 }
 
 function restartQuiz() {
-    start.style.display = "block";
     scoreDiv.style.display = "none";
     scoreMessage.style.display = "none";
     quizAgain.style.display = "none";
+    next.style.display = "none";
+    start.style.display = "block";
     score = 0;
     runningQuestion = 0;
 }
