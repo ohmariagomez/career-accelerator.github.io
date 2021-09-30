@@ -100,6 +100,7 @@ let score = 0;
 
 // render a question
 function renderQuestion(){
+    next.style.display = "none";
     choiceResponse.style.display = "none";
     let q = questions[runningQuestion];
     
@@ -137,7 +138,7 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to green
         answerIsCorrect();
-        setTimeout(renderQuestion,7000);
+        //setTimeout(renderQuestion,7000);
         
     }else{
         // answer is wrong
@@ -147,13 +148,13 @@ function checkAnswer(answer){
         choiceResponse.style.display = "block";
         // change progress color to red
         answerIsWrong();
-        setTimeout(renderQuestion,7000);
+        //setTimeout(renderQuestion,7000);
         
     }
     count = 0;
     if(runningQuestion < lastQuestion){
         runningQuestion++;
-        setTimeout(renderQuestion,7000);
+        //setTimeout(renderQuestion,7000);
     }else{
         // end the quiz and show the score
         setTimeout(scoreRender,7000);
