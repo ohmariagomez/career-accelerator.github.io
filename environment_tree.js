@@ -119,8 +119,11 @@ function scoreRender(){
     if (score == 5) {
         scoreMessage.innerHTML = "<p>Awesome! You have an extremely supportive environment.</p>";
     }
-    else if (score >= 3 && score <= 4) {
-        scoreMessage.innerHTML = "<p>Not bad. Your environment is slightly supportive.</p>"
+    else if (score == 4) {
+        scoreMessage.innerHTML = "<p>Nice! Your environment is very supportive.</p>"
+    }
+    else if (score == 3) {
+        scoreMessage.innerHTML = "<p>Not bad! Your environment is slightly supportive.</p>"
     }
     else if (score >= 1 && score <= 2) {
         scoreMessage.innerHTML = "<p>Not great. Your environment is supportive in some ways, but needs your work to create micro-environments.</p>"
