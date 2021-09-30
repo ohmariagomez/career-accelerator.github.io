@@ -39,14 +39,14 @@
     height:40px;
     line-height: 40px;
     text-align: center;
-    border : 2px solid SteelBlue;
+    border : 2px solid DarkSlateGray;
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
     left:200px;
     top:200px;
-    color : SteelBlue;
-    background-color: #f6f9fb;
+    color : DarkSlateGray;
+    background-color: LightSteelBlue;
 }
 #next:hover{
     border: 3px solid midnightblue;
