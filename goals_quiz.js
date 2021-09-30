@@ -136,6 +136,7 @@ function checkAnswer(answer){
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p><b>Correct!</b></p>" +"<p>"+ questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
+        next.style.display = "block";
         // change progress color to green
         answerIsCorrect();
         //setTimeout(renderQuestion,7000);
@@ -146,6 +147,7 @@ function checkAnswer(answer){
         choices.style.display = "none";
         choiceResponse.innerHTML= "<p><b>Incorrect!</b></p>"+"<p>"+questions[runningQuestion].response+"</p>";
         choiceResponse.style.display = "block";
+        next.style.display = "block";
         // change progress color to red
         answerIsWrong();
         //setTimeout(renderQuestion,7000);
@@ -154,9 +156,11 @@ function checkAnswer(answer){
     count = 0;
     if(runningQuestion < lastQuestion){
         runningQuestion++;
+        next.style.display = "block";
         //setTimeout(renderQuestion,7000);
     }else{
         // end the quiz and show the score
+        next.style.display = "block";
         setTimeout(scoreRender,7000);
     }
 }
