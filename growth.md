@@ -35,6 +35,7 @@ Remember: Checklist goals are done once you reach them. Growth goals will stay w
             </div>
             <div id="progress"></div>
             <div id="choiceResponse" style="display: none"></div>
+            <div id="next" onClick= "renderQuestion()">Next Question</div>
         </div>
         <div id="scoreContainer" style="display: none"></div>
         <div id="scoreMessage" style="display: none"></div>
