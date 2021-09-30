@@ -37,15 +37,15 @@
     word-break: break-all;
     width:90;
     height:30px;
-    line-height: 40px;
+    line-height: 30px;
     text-align: center;
-    border : 2px solid DarkGray;
+    border : 2px solid DimGray;
     border-radius: 5px;
     cursor: pointer;
     position: absolute;
     left:290px;
     top:250px;
-    color : DarkGray;
+    color : DimGray;
     background-color: WhiteSmoke;
 }
 #next:hover{
