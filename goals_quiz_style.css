@@ -31,6 +31,30 @@
     vertical-align: middle;
 }
 
+#next{
+    font-size: 15px;
+    font-weight: bolder;
+    word-break: break-all;
+    width:80;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    border : 2px solid SteelBlue;
+    border-radius: 23px;
+    cursor: pointer;
+    position: absolute;
+    left:250px;
+    top:100px;
+    color : SteelBlue;
+    background-color: #f6f9fb;
+}
+#next:hover{
+    border: 3px solid midnightblue;
+    color : midnightblue;
+    background-color: LightSteelBlue;
+    vertical-align: middle;
+}
+
 button {
     width: 250px;
     height: 60px;
