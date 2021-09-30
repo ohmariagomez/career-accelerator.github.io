@@ -161,9 +161,11 @@ function checkAnswer(answer){
     }else{
         // end the quiz and show the score
         next.style.display = "block";
-        setTimeout(scoreRender,7000);
+        setTimeout(scoreRender,renderQuestion);
     }
 }
+
+next.addEventListener("click",startQuiz);
 
 // answer is correct
 function answerIsCorrect(){
