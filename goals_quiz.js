@@ -161,7 +161,7 @@ function checkAnswer(answer){
     }else{
         // end the quiz and show the score
         next.style.display = "block";
-        setTimeout(scoreRender,renderQuestion);
+        setTimeout(scoreRender,7000);
     }
 }
 
