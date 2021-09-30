@@ -44,7 +44,7 @@
     cursor: pointer;
     position: absolute;
     left:200px;
-    top:100px;
+    top:200px;
     color : SteelBlue;
     background-color: #f6f9fb;
 }
@@ -153,7 +153,7 @@ button {
     color : SteelBlue;
     text-align: center;
     position: absolute;
-    top: 150px
+    top: 100px
 }
 
 #goal-statement {
